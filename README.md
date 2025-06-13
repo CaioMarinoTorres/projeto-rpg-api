@@ -10,3 +10,6 @@ Esta APi está sendo desenvolvida integralmente usando JAVA e o freamework Sprin
 
 ![JAVA](https://img.shields.io/badge/JAVA-icon?style=flat&color=red)
 ![Spring](https://img.shields.io/badge/Spring-icon?logo=spring&logoColor=white)
+
+##
+### Atualmente, o projeto está sendo desenvolvido ⚠️
