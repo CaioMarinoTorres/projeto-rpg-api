@@ -3,6 +3,8 @@ package com.rpgmarinus.projetorpgapi.domain.enums;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
+import java.util.stream.Stream;
+
 @AllArgsConstructor
 @Getter
 public enum ClassesEnum {
@@ -23,4 +25,18 @@ public enum ClassesEnum {
 
     private final Integer valor;
     private final String descricao;
+
+    public static ClassesEnum porValor(int valor) {
+        return Stream.of(ClassesEnum.values())
+                .filter(t -> t.getValor() == valor)
+                .findFirst()
+                .orElseThrow(() -> new IllegalArgumentException("Valor Enum invalido: " + valor));
+    }
+
+    public static ClassesEnum porDescricao(String descricao) {
+        return Stream.of(ClassesEnum.values())
+                .filter(t -> t.getDescricao().equalsIgnoreCase(descricao))
+                .findFirst()
+                .orElseThrow(() -> new IllegalArgumentException("Descrição Enum invalido: " + descricao));
+    }
 }

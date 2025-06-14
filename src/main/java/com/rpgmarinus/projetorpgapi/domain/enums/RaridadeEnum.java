@@ -7,29 +7,26 @@ import java.util.stream.Stream;
 
 @Getter
 @AllArgsConstructor
-public enum EscolasDeMagiaEnum {
+public enum RaridadeEnum {
 
-    ABJURACAO    (0, "Abjuracao"    ),
-    ADVINHACAO   (1, "Advinhação"   ),
-    CONJURACAO   (2, "Conjuração"   ),
-    ENCANTAMENTO (3, "Encantamento" ),
-    EVOCACAO     (4, "Evocação"     ),
-    ILUSAO       (5, "Ilusão"       ),
-    NECROMANCIA  (6, "Necromancia"  ),
-    TRANSMUTACAO (7, "Transmutação" );
+    COMUM      (1, "Comum"      ),
+    INCOMUM    (2, "Incomum"    ),
+    RARO       (3, "Raro"       ),
+    SUPER_RARO (4, "Super Raro" ),
+    LENDARIO   (5, "Lendário"   );
 
     private final Integer valor;
     private final String descricao;
 
-    public static EscolasDeMagiaEnum porValor(int valor) {
-        return Stream.of(EscolasDeMagiaEnum.values())
+    public static RaridadeEnum porValor(int valor) {
+        return Stream.of(RaridadeEnum.values())
                 .filter(t -> t.getValor() == valor)
                 .findFirst()
                 .orElseThrow(() -> new IllegalArgumentException("Valor Enum invalido: " + valor));
     }
 
-    public static EscolasDeMagiaEnum porDescricao(String descricao) {
-        return Stream.of(EscolasDeMagiaEnum.values())
+    public static RaridadeEnum porDescricao(String descricao) {
+        return Stream.of(RaridadeEnum.values())
                 .filter(t -> t.getDescricao().equalsIgnoreCase(descricao))
                 .findFirst()
                 .orElseThrow(() -> new IllegalArgumentException("Descrição Enum invalido: " + descricao));
