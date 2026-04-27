@@ -1,15 +1,45 @@
-### gerenciador-de-fichas-de-rpg-api
+# 🎲 RPG Character Manager API
 
-## História do projeto:
+![Java](https://img.shields.io/badge/Java-17+-orange)
+![Spring](https://img.shields.io/badge/Spring-Boot-brightgreen?logo=spring\&logoColor=white)
+![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
 
-Este é um projeto pessoal que, surgiu de uma necessidade da comunidade de jogadores de RPG(eu), que enfrentão uma dificuldade ao criar e gerenciar uma ficha de personagem. A princípio, esta api tem o intuito de realizar toda a gestão da parte técnica de uma ficha de um personagem de D&d 5e.
+> Backend de uma plataforma em construção para criação e gerenciamento de personagens de RPG, com foco em **D&D 5e**.
 
-## Desenvolvimento:
+---
 
-Esta APi está sendo desenvolvida integralmente usando JAVA e o freamework Spring. A estruturação do projeto está de modo que, apesar de ser um projeto pequeno até o momento, possa vir se desenvolver e tomar proporções maiores.
+## ✨ Visão do produto
 
-![JAVA](https://img.shields.io/badge/JAVA-icon?style=flat&color=red)
-![Spring](https://img.shields.io/badge/Spring-icon?logo=spring&logoColor=white)
+O **RPG Character Manager** nasce com o objetivo de resolver um problema comum entre jogadores de RPG: a dificuldade de **gerenciar fichas de personagens de forma prática, organizada e acessível**.
 
-##
-### Atualmente, o projeto está sendo desenvolvido ⚠️
+A proposta é evoluir para uma plataforma onde jogadores possam:
+
+* Criar e manter suas fichas digitalmente
+* Centralizar atributos, habilidades e regras
+* Acessar informações de forma rápida durante sessões
+* Expandir personagens conforme a progressão do jogo
+
+---
+
+## 🎯 Objetivo
+
+Construir a base de um sistema que possa evoluir para:
+
+* Aplicação web ou mobile
+* Plataforma multiusuário
+* Ferramenta de apoio para sessões de RPG
+
+---
+
+## 🚀 Tecnologias
+
+* Java
+* Spring Boot
+
+---
+
+## 🔄 Status
+
+⚠️ Projeto em desenvolvimento contínuo
+
+O sistema está sendo construído de forma incremental, com foco em evolução constante, organização de código e preparação para escalar.
